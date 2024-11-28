@@ -1,0 +1,104 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #A0E7FF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+    position: relative;
+}
+
+/* Snowflakes Styling */
+.snowflake {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    z-index: 999;
+    user-select: none;
+    pointer-events: none;
+    animation: fall 5s linear infinite, drift 1.5s ease-in-out infinite;
+}
+
+/* Snowflakes falling animation */
+@keyframes fall {
+    0% {
+        top: -10px; 
+    }
+    100% {
+        top: 100vh; 
+    }
+}
+
+/* Snowflakes drifting animation (random movement left and right) */
+@keyframes drift {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(30px); 
+    }
+    75% {
+        transform: translateX(-25px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #A0061F;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px black;
+    overflow: hidden; 
+    padding: 0px;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+/* Image Styling */
+.image-box {
+    width: 290px; 
+    height: 275px; 
+    background-image: url('../images/peppermint-paws.png'); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 0;
+    border: 6px solid #A0061F; 
+    border-radius: 15px;
+    margin: 0;
+}
+
+/* Header Section (Card Title) */
+.card h1 {
+    font-size: 28px;
+    color: white; 
+    margin-top: auto; 
+    margin-bottom: 15px;
+    font-family: 'Futura', 'Arial', sans-serif;
+}
+
+/* Card Body */
+.card p {
+    font-size: 16px;
+    margin: 0 8px 0 8px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Glory', sans-serif;
+}
