@@ -58,6 +58,7 @@ body {
     width: 300px;
     height: 400px;
     background-color: #A0061F;
+    border: 3px solid black;
     border-radius: 15px;
     box-shadow: 0 8px 12px black;
     overflow: hidden; 
