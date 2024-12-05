@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e68c; /* Central Perk couch color inspiration */
+    background-image: radial-gradient(circle, #ff6347 5px, transparent 5px), radial-gradient(circle, #4682b4 5px, transparent 5px), radial-gradient(circle, #fff 5px, transparent 5px);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px, 15px 15px;
+    color: #333;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #fff8dc; /* Slightly warm, creamy white */
+    padding: 20px;
+    border-bottom: 5px solid #ff6347; /* Tomato red for boldness */
+  }
+  
+  .header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    margin: 10px 0;
+    font-size: 3em;
+    color: #ff6347;
+    text-shadow: 2px 2px 2px #000;
+  }
+  
+  .cast-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .cast-member {
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #ff6347; /* Accent with show’s palette */
+    border-radius: 15px;
+    padding: 15px;
+    width: 220px;
+    height: 330px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .cast-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cast-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .cast-member h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #4682b4; /* Steel blue */
+    text-shadow: 1px 1px 1px #000;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff8dc;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #4682b4;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: #4682b4; /* Cool blue for contrast */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: #4169e1;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+  }
+  
